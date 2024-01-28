@@ -1,0 +1,80 @@
+body {
+    background-color: rgba(107, 159, 232, 0.918);
+  }
+.central
+{
+    font-size: larger;
+    position: relative;
+    width: 50%;
+    margin:auto;
+}
+.header {
+    position: fixed;
+    margin:auto;
+    top: 20px;
+    height: 55px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    z-index: 100;
+  }
+  .navlogo{
+    height: 100%;
+    width: auto;
+  }
+  .profile{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: 200;
+    background: #c0392b;
+    background: -webkit-linear-gradient(to left, #8e44ad, #c0392b);
+    background: linear-gradient(to left, #8e44ad, #c0392b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    font-family:Arial, Helvetica, sans-serif ;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+ .icons{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+ }
+.icons li{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+.icons li img{
+    width: 20px;
+}
+
+
+.pfp {
+  margin-top: 150px;
+  object-fit: contain;
+}
