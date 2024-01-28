@@ -10,32 +10,36 @@
 </head>
 <body>
     <img style="position: fixed; top: 0;" src="assets/UpperGradient.png">
-    <div class="central">
+    <!--Navbar-->
+    <section class="central">
 
-        <!--Navbar-->
-        <!-- <header class="header">
-            <img src="assets/navbarLogo.png" class="navlogo">
-            <ul>
-                <li><a href="#" class="profile">Profile</a></li>
-                <li><a href="#home">about</a></li>
-                <li><a href="#news">work</a></li>
-                <li><a href="#contact">gallery</a></li>
-                <li><a href="#about">connect</a></li>
-              </ul>
-              <ul class="icons">
-                <li><img src="assets/fblogo.png" class="fblogo"></li>
-                <li><img src="assets/Twitterlogo.png" class="twitterlogo"></li>
-                <li><img src="assets/Iglogo.png" class="iglogo"></li> 
-                <li><img src="assets/lightthemebtn.png" class="lightbtn"></li>
-              </ul>
-                 
-        </header> -->
+        <div class="nav">
+          
+            <div class="nav-header">
+              <img height="50" src="./assets/navbarLogo.png" alt="">
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="nav-links">
+              <a class="gradientFont">Profile</a>
+              <a >About</a>
+              <a >Work</a>
+              <a >Gallery</a>
+              <a >Connect</a>
+            </div>
+          </div>
+    </section>
+    <!--Navbar Ends-->
 
-       
-        <!--Navbar Ends-->
 
     <!-- Profile section -->
-    <section>
+    <section class="central">
         <div class="pfp">
             <div class="profile">
 
@@ -53,16 +57,71 @@
             clients overall India.</p>
             <p>Building what I love at <span class="gradientFont">@panache.green</span></p>
         </div>
-    </div>
+ 
 
     </section>
     <!-- profile ends -->
     
     <!--Design Astra  -->
-    <section>
+    <section class="central" style="margin-top: 50px;">
         <span class="color2">DESIGN ASTRA</span>
+        <marquee class="m" behavior="" direction="" >
+
+            <img style="width: auto; margin-right: 20px;" src="./assets/1.png" width="190" height="45" alt="W3docs" />
+            <img style="width: auto; margin-right: 20px;" src="./assets/2.png" width="190" height="45" alt="W3docs" />
+            <img style="width: auto; margin-right: 20px;" src="./assets/3.png" width="190" height="45" alt="W3docs" />
+            <img style="width: auto; margin-right: 20px;" src="./assets/4.png" width="190" height="45" alt="W3docs" />
+            <img style="width: auto; margin-right: 20px;" src="./assets/5.png" width="190" height="45" alt="W3docs" />
+            <img style="width: auto; margin-right: 20px;" src="./assets/6.png" width="190" height="45" alt="W3docs" />
+            <img style="width: auto; margin-right: 20px;" src="./assets/7.png" width="190" height="45" alt="W3docs" />
+       
+        </marquee>
+        <style>
+            .m{
+                animation: marquee 5s linear infinite;
+            }
+        </style>
     </section>
     <!-- End design Estra -->
-</body>
 
+    <!-- projects -->
+    <Section class="central" >
+    <span class="color2">FEATURED PROJECTS</span>
+    <div class="project">
+      
+        <div style="display: grid; margin: 5%;">
+        <img src="./assets/ambrela.money.png" alt="">
+        <span>sample</span>
+       </div>
+
+       <div style="display: grid; margin: 5%;">
+        <img src="./assets/amrelamoney.png" alt="">
+        <span>sample</span>
+       </div>
+
+       <div style="display: grid; margin: 5%;">
+        <img   src="./assets/arjavamhealth.png" alt="">
+        <span>sample</span>
+       </div>
+
+       <div style="display: grid; margin: 5%;">
+        <img  src="./assets/Bitebuddy.png" alt="">
+        <span>sample</span>
+       </div>
+
+       <div style="display: grid; margin: 5%;">
+        <img  src="./assets/disha.png" alt="">
+        <span>sample</span>
+       </div>
+
+       <div style="display: grid; margin: 5%;">
+        <img  src="./assets/zebronics.png" alt="">
+        <span>sample</span>
+       </div>
+
+    </div>
+    </Section>
+    <!-- Projects end -->
+</body>
+<script src="./script.js"></script>
 </html>
