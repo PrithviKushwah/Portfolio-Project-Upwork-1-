@@ -4,6 +4,9 @@ body {
   font-family: "Inter", sans-serif;
 
   }
+  .bg-image{
+    width: -webkit-fill-available;
+  }
 
   /* navbar */
 
@@ -324,8 +327,10 @@ text-align: justify;
    display: grid;
 }
 .card {
-  
-  color: white;
+  img{
+    border-radius: 30px;
+  }
+  border-radius: 30px;
   padding: 1rem;
   height: auto;
 }
@@ -365,4 +370,31 @@ text-align: justify;
       transform: translateX(-100%);
   }
 }
+.sayhi{
+  display: flex;
+  align-items: center;
+  background-image: url('./assets/sayhigradient.png'); 
+  border-radius: 40px;
+}
 
+.sayhi-div1{
+  display: grid;
+  align-self: stretch; 
+  width: 50%;
+  padding: 5%;
+}
+.sayhi-div2{
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .sayhi {
+    flex-direction: column-reverse; 
+  }
+
+  .sayhi-div1
+  {
+    width: 100%; 
+    padding: 2%; 
+  }
+  
+}
