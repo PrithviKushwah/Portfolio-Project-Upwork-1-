@@ -1,17 +1,17 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 body {
-    
-  }
+  font-family: "Inter", sans-serif;
 
+  }
 
   /* navbar */
 
   .nav {
+    margin-top: 30px;
     height: 50px;
     width: 100%;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 10px;
     position: relative;
@@ -105,6 +105,7 @@ body {
     position: relative;
     width: 50%;
     margin:auto;
+
 }
 .header {
     position: fixed;
@@ -125,7 +126,6 @@ body {
     width: auto;
   }
   .gradientFont{
-    font-family:Arial, Helvetica, sans-serif ;
     font-weight: 700;
 
     background: #c0392b;
@@ -149,7 +149,6 @@ body {
   }
   
   li a {
-    font-family:Arial, Helvetica, sans-serif ;
     display: inline-block;
     color: white;
     text-align: center;
@@ -172,19 +171,16 @@ body {
     width: 20px;
 }
 
-
-/* .pfp {
-  margin-top: 150px;
-  object-fit: contain;
-} */
-
 .profile{
   display: flex;
   align-items: center;
 }
 
 .color2{
-  color: rgb(125, 125, 125);
+  color: rgba(74, 87, 111, 0.70);
+  word-wrap: break-word;
+  font-family: "Inter", sans-serif;
+
 }
 .section{
   width: 50px;
@@ -195,8 +191,38 @@ body {
     display: flex;
      flex-wrap: wrap;
      margin-left: -40px;
+     
   }
   .project img{
     height: 10rem;
     border-radius: 10%;
   }
+  .tileHeading{
+    color: #22242C;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 22px;
+    word-wrap: break-word;
+  }
+  .workparas{
+    color: #22242C;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+  }
+  .gridElement:hover{
+    background:radial-gradient(rgb(226, 215, 227), rgb(194, 199, 218));
+
+}
+.tilepara
+{
+color: #22242C;
+font-size: 14px;
+font-family: Inter;
+font-weight: 400;
+line-height: 20px;
+word-wrap: break-word
+}
