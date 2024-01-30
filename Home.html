@@ -14,15 +14,15 @@
     <section class="central">
 
         <div class="nav">
-          
+           <input type="checkbox" id="nav-check">
             <div class="nav-header">
               <img height="50" src="./assets/navbarLogo.png" alt="">
             </div>
             <div class="nav-btn">
               <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="menu-lines"></span>
+                <span class="menu-lines"></span>
+                <span class="menu-lines"></span>
               </label>
             </div>
             
@@ -32,14 +32,17 @@
               <a >Work</a>
               <a >Gallery</a>
               <a >Connect</a>
+              <a><div><img src="assets/lightthemebtn.png" class="btn-toggle"></div></a>
+             
             </div>
           </div>
+          
     </section>
     <!--Navbar Ends-->
 
 
     <!-- Profile section -->
-    <section class="central">
+    <section class="central" style="padding:20px ;z-index: -1;position: relative;">
         <div class="pfp">
             <div class="profile">
 
@@ -55,6 +58,7 @@
             <p class="profile-details">A design wizard voyaging into the metaverse. I tell the story through my
             design and products. I spent most of my time designing for brands and
             clients overall India.</p>
+            <br>
             <p class="profile-text color2">Building what I love at <span class="gradientFont">@panache.green</span></p>
         </div>
  
@@ -63,37 +67,55 @@
     <!-- profile ends -->
     
 <!--Design Astra  -->
-   <section class="central astramain" style="margin-top: 50px; ">
-    <span class="color2 type2-text" style="margin-bottom: 30px;" >design astra</span>
-    <marquee class="m1" behavior="" direction="" >
+   <section class="central astramain" style="margin-top: 30px;padding:20px ">
+    <span class="color2 type2-text" style="margin-bottom: 0px;" >design astra</span>
+    <div class="body__inner-wrapper">
+           
+        <div class="marquee">
+          <div class="marquee__inner-wrap">
+            <div class="marquee__inner">
+              <div class="marquee__img" style="background-image: url(./assets/1.png)"></div>
+              <div class="marquee__img" style="background-image: url(./assets/2.png)"></div>
+              <div class="marquee__img" style="background-image: url(./assets/3.png)"></div>
+             <div class="marquee__img" style="background-image: url(./assets/4.png)"></div>
+             <div class="marquee__img" style="background-image: url(./assets/5.png)"></div>
 
-        <img  src="./assets/1.png" width="190" height="45" alt="W3docs" />
-        <img  src="./assets/2.png" width="190" height="45" alt="W3docs" />
-        <img  src="./assets/3.png" width="190" height="45" alt="W3docs" />
-        <img  src="./assets/4.png" width="190" height="45" alt="W3docs" />
-        <img  src="./assets/5.png" width="190" height="45" alt="W3docs" />
-        <img  src="./assets/6.png" width="190" height="45" alt="W3docs" />
-        <img  src="./assets/7.png" width="190" height="45" alt="W3docs" />
-        
-    </marquee>
+             <div class="marquee__img" style="background-image: url(./assets/6.png)"></div>
+
+             <div class="marquee__img" style="background-image: url(./assets/7.png)"></div>
+
+             <div aria-hidden="true" class="marquee__img" style="background-image: url(./assets/1.png)"></div>
+             <div aria-hidden="true" class="marquee__img" style="background-image: url(./assets/2.png)"></div>
+             <div aria-hidden="true" class="marquee__img" style="background-image: url(./assets/3.png)"></div>
+             <div aria-hidden="true" class="marquee__img" style="background-image: url(./assets/4.png)"></div>
+             <div aria-hidden="true" class="marquee__img" style="background-image: url(./assets/5.png)"></div>
+
+             <div aria-hidden="true" class="marquee__img" style="background-image: url(./assets/6.png)"></div>
+
+             <div aria-hidden="true" class="marquee__img" style="background-image: url(./assets/7.png)"></div>
+
+           </div>
+         </div>
+       </div>
+     </div>
 </section>
 <!-- End design Estra -->
 
 <!-- projects -->
-    <Section class="central" style="margin-top: 50px;" >
-    <span class="color2 type2-text" >FEATURED PROJECTS</span>
+    <Section class="central" >
+    <span class="color2 type2-text" style="padding: 20px;" >FEATURED PROJECTS</span>
     <div class="cards" style="margin-bottom:50px;">
             <div class="card gridElement">
             <img  src="./assets/Bitebuddy.png" alt="">
             <span class="tileHeading">Bitebuddy</span>
-            <span class="color2" style="font-size: 14px;font-weight: 700;line-height: 20px;letter-spacing: 0.10px;word-wrap: break-word">Mobile App Design</span>
+            <div class="color2" style="font-size: 14px;font-weight: 700;line-height: 20px;letter-spacing: 0.10px;word-wrap: break-word">Mobile App Design</div>
             <p class="tilepara">A ecosystem crafted to address and prevent hunger.</p>
             </div>
 
            <div class="card gridElement">
             <img   src="./assets/arjavamhealth.png" alt="">
             <span class="tileHeading">Arjavam Wealth</span>
-            <span class="color2" style="font-size: 14px;font-weight: 700;line-height: 20px;letter-spacing: 0.10px;word-wrap: break-word">Brand Identity Design</span>
+            <div class="color2" style="font-size: 14px;font-weight: 700;line-height: 20px;letter-spacing: 0.10px;word-wrap: break-word">Brand Identity Design</div>
             <p class="tilepara">A firm managing high wealth portfolios across India.</p>
            </div>
         
@@ -101,28 +123,28 @@
             <div class="card gridElement">
             <img src="./assets/amrelamoney.png" alt="">
             <span class="tileHeading">Ambrela.Money</span>
-            <span class="color2" style="font-size: 14px;font-weight: 700;line-height: 20px;letter-spacing: 0.10px;word-wrap: break-word">Website Redesign</span>
+            <div class="color2" style="font-size: 14px;font-weight: 700;line-height: 20px;letter-spacing: 0.10px;word-wrap: break-word">Website Redesign</div>
             <p class="tilepara">Open-source Figma UI Kit made for this website</p>
             </div>
             <div class="card gridElement">
-            <img  src="./assets/Bitebuddy.png" alt="">
+            <img  src="./assets/disha.png" alt="">
             <span class="tileHeading">Product Design</span>
-            <span class="color2" style="font-size: 14px;font-weight: 700;line-height: 20px;letter-spacing: 0.10px;word-wrap: break-word">Mobile App Design</span>
+            <div class="color2" style="font-size: 14px;font-weight: 700;line-height: 20px;letter-spacing: 0.10px;word-wrap: break-word">Mobile App Design</div>
             <p class="tilepara">A product designed with the aim of assisting elderly.</p>
             </div>
 
             <div class="card gridElement">
-            <img   src="./assets/arjavamhealth.png" alt="">
+            <img   src="./assets/ambrela.money.png" alt="">
             <span class="tileHeading">Arjavam Wealth</span>
-            <span class="color2" style="font-size: 14px;font-weight: 700;line-height: 20px;letter-spacing: 0.10px;word-wrap: break-word">Brand Identity Design</span>
+            <div class="color2" style="font-size: 14px;font-weight: 700;line-height: 20px;letter-spacing: 0.10px;word-wrap: break-word">Brand Identity Design</div>
             <p class="tilepara">A firm managing high wealth portfolios across India.</p>
             </div>
         
 
             <div class="card gridElement">
-            <img src="./assets/amrelamoney.png" alt="">
+            <img src="./assets/zebronics.png" alt="">
             <span class="tileHeading">Ambrela.Money</span>
-            <span class="color2" style="font-size: 14px;font-weight: 700;line-height: 20px;letter-spacing: 0.10px;word-wrap: break-word">Website Redesign</span>
+            <div class="color2" style="font-size: 14px;font-weight: 700;line-height: 20px;letter-spacing: 0.10px;word-wrap: break-word">Website Redesign</div>
             <p class="tilepara">Open-source Figma UI Kit made for this website</p>
             </div>
         
@@ -132,7 +154,7 @@
 <!-- Projects end -->
 
    <!-- Recent Work Thesis -->
-   <section class="central" style="margin-top: 50px;">
+   <section class="central" style="margin-top: 50px;padding:20px">
     <span class="color2 type2-text">RECENT WORK THESIS</span>
 <div class="rwt">
     <span class="rwt-heading">Disha : Golden Ager Buddy</span>
@@ -152,12 +174,12 @@
 <!-- Recent Work Thesis end -->
 
     <!-- Say HI -->
-    <section class="central" style="margin-top: 50px;">
+    <section class="central" style="margin-top: 50px;padding:20px">
         <div class="sayhi">
             <div class="sayhi-div1">
     
-                <span class="gradientFont" style="font-size: 44px;">SAY HI!</span>
-                <span style="font-size: 21px;">Want to create something awesome? Or, you have any query? Drop an message or call.</span>
+                <span class="gradientFont sayhi-text">SAY HI!</span>
+                <span class="sayhi-text-inner">Want to create something awesome? Or, you have any query? Drop an message or call.</span>
                 <div>
                     <span class="gradientFont">8766907114</span>
                     <span class="gradientFont" style="float: right;">nishadd_n</span>
@@ -172,29 +194,44 @@
     </section>
 
     <!-- Worked With -->
-<section class="central" style="margin-top: 50px;">
-        <span class="color2" style="font-weight: 700;text-transform: uppercase;letter-spacing: 3px;font-size: 14px;">WORKED WITH</span>
-        <marquee class="m" behavior="" direction="" >
+    <section class="central astramain" style="margin-top: 50px;padding: 20px;">
+        <span class="color2 type2-text" style="margin-bottom: 30px;" >design astra</span>
+        <div class="body__inner-wrapper">
+               
+            <div class="marquee">
+              <div class="marquee__inner-wrap">
+                <div class="marquee__inner">
+                  <div  class="marquee__img" style="background-image: url(./assets/AmbrelaLogo.png); width: 8rem; height: 8rem;"></div>
+                  <div  class="marquee__img" style="background-image: url(./assets/zebronicsLogo.png); width: 8rem; height: 8rem;"></div>
 
-            <img style="width: auto; margin-right: 20px;" src="./assets/CureyaLogo.png" width="180" height="35" alt="W3docs" />
-            <img style="width: auto; margin-right: 20px;" src="./assets/cairrosLogo.png" width="180" height="35" alt="W3docs" />
-            <img style="width: auto; margin-right: 20px;" src="./assets/AmbrelaLogo.png" width="180" height="35" alt="W3docs" />
-            <img style="width: auto; margin-right: 20px;" src="./assets/zebronicsLogo.png" width="180" height="35" alt="W3docs" />
-       
-        </marquee>
-        <style>
-            .m{
-                animation: marquee 5s linear infinite;
-            }
-        </style>
+                 <div  class="marquee__img" style="background-image: url(./assets/cairrosLogo.png); width: 8rem; height: 8rem;"></div>
+                 <div  class="marquee__img" style="background-image: url(./assets/CureyaLogo.png); width: 8rem; height: 8rem;"></div>
+    
+                 <div  aria-hidden="true" class="marquee__img" style="background-image: url(./assets/AmbrelaLogo.png); width: 8rem; height: 8rem;"></div>
+                 <div  aria-hidden="true" class="marquee__img" style="background-image: url(./assets/zebronicsLogo.png); width: 8rem; height: 8rem;"></div>
+               
+                 <div  aria-hidden="true" class="marquee__img" style="background-image: url(./assets/cairrosLogo.png); width: 8rem; height: 8rem;"></div>
+                 <div  aria-hidden="true" class="marquee__img" style="background-image: url(./assets/CureyaLogo.png); width: 8rem; height: 8rem;"></div>
+    
+               </div>
+             </div>
+           </div>
+         </div>
     </section>
 
-    <section class="central" style="margin-top: 100px;margin-bottom: 50px;">
-        <div class="color2" style="width: 100%; height: 100%; opacity: 0.40;text-align: center;">@nishadvjy X NishadNiphade</div>
-    </section>
+    <section class="central" id="btmnav" style="margin-top: 100px;margin-bottom: 40px;">
+      <div class="color2" style="height: 100%;text-align: center;font-size: 18px;">©nishadvjy ✦ Nishad Niphade</div><br>
+      <div class="bottomnav">
+          <a class="bottomnavanch">Profile</a>
+          <a class="bottomnavanch">About</a>
+          <a class="bottomnavanch" >Work</a>
+          <a class="bottomnavanch">Gallery</a>
+          <a class="bottomnavanch">Connect</a>
+        </div>
+  </section>
 
 
     <!-- <img style="position: fixed; bottom: 0;" src="assets/footerGradient.png"> -->
 </body>
-<script src="./script.js"></script>
+<script src="./mode.js"></script>
 </html>

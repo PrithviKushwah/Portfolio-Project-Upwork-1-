@@ -1,13 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
   font-family: "Inter", sans-serif;
-
+  
   }
   .bg-image{
     width: -webkit-fill-available;
   }
 
+  body {
+    --text-color: #222;
+    --bkg-color: #fff;
+  }
+  body.dark-theme {
+    --text-color: #eee;
+    --bkg-color: #121212;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    
+    body {
+      --text-color: #eee;
+      --bkg-color: #121212;
+    }
+    body.light-theme {
+      --text-color: #222;
+      --bkg-color: #fff;
+    }
+  }
+  body {
+    background: var(--bkg-color);
+  }
+  span{
+    color:var(--text-color) ;
+  }
+  /* div{
+    color: var(--text-color);
+  } */
+  p{
+    color: var(--text-color);
+  }
+  
   /* navbar */
 
   .nav {
@@ -39,11 +72,14 @@ body {
     display: inline;
     float: right;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
   }
   
   .nav > .nav-links > a {
     display: inline-block;
-    padding: 13px 10px 13px 10px;
+    padding: 0px 10px 0px 10px;
     text-decoration: none;
     color: #000000;
   }
@@ -70,24 +106,28 @@ body {
       padding: 13px;
     }
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgb(255, 255, 255);
     }
     .nav > .nav-btn > label > span {
       display: block;
       width: 25px;
       height: 10px;
-      border-top: 2px solid #eee;
+      border-top: 2px solid #000000;
     }
     .nav > .nav-links {
       position: absolute;
       display: block;
       width: 100%;
-      background-color: #333;
-      height: 0px;
-      transition: all 0.3s ease-in;
+   height: 0px;
+     transition: all 0.3s ease-in;
       overflow-y: hidden;
       top: 50px;
       left: 0px;
+      background: linear-gradient(95deg, rgb(20 49 255 / 15%) 0%, rgb(253 31 29 / 39%) 50%, rgb(247 203 141 / 9%) 100%);
+    background-color: #ffffffe8;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    text-align: center;
     }
     .nav > .nav-links > a {
       display: block;
@@ -97,8 +137,9 @@ body {
       height: 0px;
     }
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
+      height: calc(60vh - 50px);
+    /* overflow-y: auto; */
+    
     }
   }
   /* nambar ends */
@@ -109,6 +150,14 @@ body {
     width: 50%;
     margin:auto;
 
+}
+@media screen and (max-width: 768px) {
+  .central {
+    font-size: medium;
+    position: relative;
+    width: 80%;
+    /* margin:10%; */
+  }
 }
 .header {
     position: fixed;
@@ -177,6 +226,7 @@ body {
 .profile{
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .color2{
@@ -218,7 +268,9 @@ body {
     word-wrap: break-word;
   }
   .gridElement:hover{
-    background:radial-gradient(rgb(226, 215, 227), rgb(194, 199, 218));
+    opacity: 1;
+    background: linear-gradient(90deg,rgba(255,233,244,0.4) 0%,rgba(234,243,255,0.7) 100%);;
+    transition: all 333ms ease 0s;
 
 }
 .gridElement{
@@ -239,11 +291,13 @@ text-align: justify;
 }
 .profile-span1{
   color: black;
-  font-size: 24px;
-  font-family: Montserrat;
-  font-weight: 700;
-  line-height: 22px;
-  word-wrap: break-word
+font-size: 24px;
+font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+font-weight: 700;
+line-height: 22px;
+word-wrap: break-word
+  
 }
 .profile-span2{
   color: rgb(78, 78, 78); 
@@ -251,11 +305,11 @@ text-align: justify;
    font-family: Montserrat; 
    font-weight: 700; 
    line-height: 22px;
-    word-wrap: break-word
+    
 }
 .profile-details{
   text-align:justify;
-  color: #22242C;
+  
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -328,9 +382,10 @@ text-align: justify;
 }
 .card {
   img{
-    border-radius: 30px;
+    border-radius: 20px;
+    width: 100%;
   }
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 1rem;
   height: auto;
 }
@@ -340,6 +395,7 @@ text-align: justify;
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
+  margin-top: 20px;
 }
 
 /* Screen larger than 600px? 2 column */
@@ -393,8 +449,142 @@ text-align: justify;
 
   .sayhi-div1
   {
-    width: 100%; 
-    padding: 2%; 
+    width: 100%;
+    padding: 2%;
+    /* line-height: 25px; */
+    padding: 7%;
+    display: grid;
+    row-gap: 20px;
   }
   
+}
+.sayhi-text{
+  font-size: 44px;
+}
+@media screen and (max-width: 768px) {
+  .sayhi-text {
+    font-size: 20px;
+  }
+}
+
+.sayhi-text-inner{
+  font-size: 21px;
+}
+@media screen and (max-width: 768px) {
+  .sayhi-text-inner {
+    font-size: 14px;
+  }
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 4.4rem;
+  font-weight: 900;
+  word-spacing: 12px;
+  padding-inline-start: 1rem;
+}
+
+.body__inner-wrapper {
+  height: 100%;
+  max-width: 104rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  justify-content: center;
+  margin-inline: auto;
+  
+}
+
+
+
+.marquee {
+  width: 100%;
+  height: 110px;
+  pointer-events: none;
+  overflow: hidden;
+  
+}
+
+.marquee__inner-wrap {
+  height: 100%;
+  width: 100%;
+}
+
+.marquee span {
+  text-align: center;
+  color: lightgray;
+  font-weight: 400;
+  white-space: nowrap;
+  font-size: max(2vw, 2.4rem);
+  line-height: 1.2;
+  font-weight: 700;
+  padding: 1vh 1vw 0;
+  text-transform: uppercase;
+}
+
+.marquee__img {
+  width: 3rem;
+    height: 3rem;
+    margin: 0 1.5vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(0.6);
+    object-fit: contain;
+    background-size: contain;
+}
+
+.marquee__inner {
+  height: 100%;
+  width: fit-content;
+  align-items: center;
+  display: flex;
+  position: relative;
+  animation: marquee 15s linear infinite;
+  will-change: transform;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.bottomnav{
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  color: rgba(74, 87, 111, 0.70);
+  word-wrap: break-word;
+  font-family: "Inter", sans-serif;
+}
+ @media only screen and (max-width:600px) {
+  .bottomnav {
+  font-size: 13px;
+  width: 100%;
+  color: rgba(74, 87, 111, 0.70);
+  font-family: "Inter", sans-serif;
+  
+  }
+  #btmnav{
+  width: 100%;
+  }
+
+}
+.bottomnavanch{
+  padding: 10px 10px 10px 10px;
 }
