@@ -218,7 +218,7 @@ body {
     word-wrap: break-word;
   }
   .gridElement:hover{
-    background:radial-gradient(rgb(226, 215, 227), rgb(194, 199, 218));
+    background:radial-gradient(rgb(254, 247, 250), rgb(245, 247, 254));
 
 }
 .gridElement{
@@ -398,3 +398,28 @@ text-align: justify;
   }
   
 }
+
+.bottomnav{
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  color: rgba(74, 87, 111, 0.70);
+  word-wrap: break-word;
+  font-family: "Inter", sans-serif;
+}
+ @media only screen and (max-width:600px) {
+  .bottomnav {
+  font-size: 15px;
+  width: 100%;
+  color: rgba(74, 87, 111, 0.70);
+  font-family: "Inter", sans-serif;
+  
+  }
+  #btmnav{
+  width: 100%;
+  }
+}
+.bottomnavanch{
+  padding: 10px 10px 10px 10px;
+}
+
