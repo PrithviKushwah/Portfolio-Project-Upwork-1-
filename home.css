@@ -71,7 +71,7 @@ body {
   .nav > .nav-links {
     display: inline;
     float: right;
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     margin-top: 7px;
@@ -183,6 +183,18 @@ body {
     background: #c0392b;
     background: -webkit-linear-gradient(to left, #8e44ad, #c0392b);
     background: linear-gradient(to left, #8e44ad, #c0392b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+  .gradientFont2{
+    font-weight: 700;
+
+    background: #c0392b;
+    background: -webkit-linear-gradient(to right, rgb(83, 137, 230), rgb(238,0,244));
+    background: linear-gradient(to right,  rgb(83, 137, 230), rgb(238,0,244));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
