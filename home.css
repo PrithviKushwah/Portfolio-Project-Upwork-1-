@@ -389,6 +389,32 @@ word-wrap: break-word
   padding: 1rem;
   height: auto;
 }
+@media (max-width: 600px) {
+  .card {
+    img{
+      border-radius: 20px;
+      width: 100%;
+    }
+    border-radius: 20px;
+    padding: 1rem;
+    height: auto;
+  }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (max-width: 900px) {
+  .card {
+    img{
+      border-radius: 20px;
+      width: 100%;
+    }
+    border-radius: 20px;
+    padding: 1rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+}
 
 .cards {
   max-width: 1200px;
