@@ -650,3 +650,36 @@ h1 {
 .bottomnavanch{
   padding: 10px 10px 10px 10px;
 }
+
+/* about page Css */
+.about{
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 40px;
+  word-wrap: break-word;
+  text-align: center;
+  background: #c0392b;
+  background: -webkit-linear-gradient(to left, rgb(83, 137, 230), rgb(187, 0, 244));
+  background: linear-gradient(to left,  rgb(83, 137, 230), rgb(187,0,244));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.central-abt{
+  font-size: larger;
+  position: relative;
+  width: 35%;
+  margin:auto;
+}
+@media screen and (max-width: 768px) {
+  .central-abt {
+    font-size: medium;
+    position: relative;
+    width: 80%;
+    /* margin:10%; */
+  }
+}
