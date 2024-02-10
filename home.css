@@ -84,10 +84,10 @@ body {
     color: #000000;
   }
   
-  .nav > .nav-links > a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+  /* .nav > .nav-links > a:hover {
+    background-color: rgba(123, 118, 118, 0.3);
   }
-  
+   */
   .nav > #nav-check {
     display: none;
   }
@@ -417,8 +417,8 @@ word-wrap: break-word
 @media (max-width: 900px) {
   .card {
     img{
-      border-radius: 20px;
-      width: 100%;
+      border-radius: 10px;
+      width: 30%;
     }
     border-radius: 20px;
     padding: 1rem;
@@ -426,6 +426,12 @@ word-wrap: break-word
     display: flex;
     align-items: center;
   }
+  .tilepara{
+    display: none;
+  }
+  .project-tile-content {
+    margin: 10px;
+}
 }
 
 .cards {
