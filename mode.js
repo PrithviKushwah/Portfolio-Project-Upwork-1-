@@ -7,10 +7,11 @@ const abt_line = document.getElementById("abt-line");
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme === "dark") {
   document.body.classList.toggle("dark-theme");
-  abt_btm_img.src = "assets/aboutBottom.png"; // Change this to the path of your dark theme image
+  abt_btm_img.src = "assets/aboutBottom.png"; 
+  abt_line.src = ""
 } else if (currentTheme === "light") {
   document.body.classList.toggle("light-theme");
-  abt_btm_img.src = "assets/abtbottomlite.png"; // Change this to the path of your light theme image
+  abt_btm_img.src = "assets/abtbottomlite.png"; 
 }
 
 btn.addEventListener("click", function () {
