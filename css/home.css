@@ -184,7 +184,7 @@ p {
     overflow-y: hidden;
     top: 50px;
     left: 0px;
-    background: linear-gradient(95deg, rgb(20 49 255 / 15%) 0%, rgb(209 182 182 / 39%) 50%, rgb(247 203 141 / 9%) 100%);
+    background: linear-gradient(95deg, rgb(20 49 255 / 15%) 0%, rgb(0 0 0 / 39%) 50%, rgb(247 203 141 / 9%) 100%);
     background-color: #ffffffe8;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
