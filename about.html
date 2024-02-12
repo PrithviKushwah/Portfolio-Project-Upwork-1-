@@ -10,9 +10,9 @@
 </head>
 
 <body>
-  <img class="bg-image" style="position: absolute; top: 0;" src="assets/UpperGradient.png">
+  <img class="bg-image" style="position: absolute;top: 0;height: -webkit-fill-available;" src="assets/UpperGradient.png">
   <!--Navbar-->
-  <section class="central">
+  <section class="central" style="z-index: 1;">
 
     <div class="nav">
       <input type="checkbox" id="nav-check">
@@ -27,7 +27,7 @@
         </label>
       </div>
 
-      <div style="margin-top: 15px;" class="nav-links">
+      <div  class="nav-links">
         <a href="Home.html"><span class="navbartextheme">Home</span></a>
         <a class="gradientFont">About</a>
         <a><span class="navbartextheme">Work</span></a>
@@ -154,23 +154,31 @@
     <div class="body__inner-wrapper">
 
       <div class="marquee">
-              <div class="marquee__inner-wrap">
-                <div class="marquee__inner">
-                  <div  class="marquee__img" style="background-image: url(./assets/AmbrelaLogo.png); width: 8rem; height: 8rem;"></div>
-                  <div  class="marquee__img" style="background-image: url(./assets/zebronicsLogo.png); width: 8rem; height: 8rem;"></div>
+        <div class="marquee__inner-wrap">
+          <div class="marquee__inner">
+            <div class="marquee__img"
+              style="background-image: url(./assets/AmbrelaLogo.png); width: 8rem; height: 8rem;"></div>
+            <div class="marquee__img"
+              style="background-image: url(./assets/zebronicsLogo.png); width: 8rem; height: 8rem;"></div>
 
-                 <div  class="marquee__img" style="background-image: url(./assets/cairrosLogo.png); width: 8rem; height: 8rem;"></div>
-                 <div  class="marquee__img" style="background-image: url(./assets/CureyaLogo.png); width: 8rem; height: 8rem;"></div>
-    
-                 <div  aria-hidden="true" class="marquee__img" style="background-image: url(./assets/AmbrelaLogo.png); width: 8rem; height: 8rem;"></div>
-                 <div  aria-hidden="true" class="marquee__img" style="background-image: url(./assets/zebronicsLogo.png); width: 8rem; height: 8rem;"></div>
-               
-                 <div  aria-hidden="true" class="marquee__img" style="background-image: url(./assets/cairrosLogo.png); width: 8rem; height: 8rem;"></div>
-                 <div  aria-hidden="true" class="marquee__img" style="background-image: url(./assets/CureyaLogo.png); width: 8rem; height: 8rem;"></div>
-    
-               </div>
-             </div>
-           </div>
+            <div class="marquee__img"
+              style="background-image: url(./assets/cairrosLogo.png); width: 8rem; height: 8rem;"></div>
+            <div class="marquee__img"
+              style="background-image: url(./assets/CureyaLogo.png); width: 8rem; height: 8rem;"></div>
+
+            <div aria-hidden="true" class="marquee__img"
+              style="background-image: url(./assets/AmbrelaLogo.png); width: 8rem; height: 8rem;"></div>
+            <div aria-hidden="true" class="marquee__img"
+              style="background-image: url(./assets/zebronicsLogo.png); width: 8rem; height: 8rem;"></div>
+
+            <div aria-hidden="true" class="marquee__img"
+              style="background-image: url(./assets/cairrosLogo.png); width: 8rem; height: 8rem;"></div>
+            <div aria-hidden="true" class="marquee__img"
+              style="background-image: url(./assets/CureyaLogo.png); width: 8rem; height: 8rem;"></div>
+
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section class="central" style="display: flex;justify-content: space-around;">

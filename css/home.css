@@ -125,10 +125,11 @@ p {
 .nav>.nav-links {
   display: inline;
   float: right;
+  margin-top: 15px;
   font-size: 16px;
   display: flex;
   align-items: center;
-  margin-top: 7px;
+  
 }
 
 .nav>.nav-links>a {
@@ -176,13 +177,14 @@ p {
   .nav>.nav-links {
     position: absolute;
     display: block;
+    margin-top: 0px;
     width: 100%;
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 50px;
     left: 0px;
-    background: linear-gradient(95deg, rgb(20 49 255 / 15%) 0%, rgb(253 31 29 / 39%) 50%, rgb(247 203 141 / 9%) 100%);
+    background: linear-gradient(95deg, rgb(20 49 255 / 15%) 0%, rgb(209 182 182 / 39%) 50%, rgb(247 203 141 / 9%) 100%);
     background-color: #ffffffe8;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
