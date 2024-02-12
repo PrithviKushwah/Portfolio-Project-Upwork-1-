@@ -6,13 +6,13 @@ const abt_line = document.getElementById("abt-line");
 
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme === "dark") {
-  document.body.classList.toggle("dark-theme");
-  abt_btm_img.src = "assets/aboutBottom.png"; 
-  abt_line.src = "assests/abtline.png";
-} else if (currentTheme === "light") {
-  document.body.classList.toggle("light-theme");
   abt_btm_img.src = "assets/abtbottomlite.png"; 
   abt_line.src = "assets/abtlinelight.png";
+  document.body.classList.toggle("dark-theme");
+} else if (currentTheme === "light") {
+  document.body.classList.toggle("light-theme");
+  abt_btm_img.src = "assets/aboutBottom.png"; 
+  abt_line.src = "assets/abtline.png";
 }
 
 btn.addEventListener("click", function () {
