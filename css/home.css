@@ -713,7 +713,7 @@ h1 {
   align-items: center;
   display: flex;
   position: relative;
-  animation: marquee 15s linear infinite;
+  animation: marquee 12s linear infinite;
   will-change: transform;
 }
 
@@ -722,6 +722,26 @@ h1 {
     transform: translateX(-50%);
   }
 }
+.marquee__inner_reverse {
+  height: 100%;
+  width: fit-content;
+  align-items: center;
+  display: flex;
+  position: relative;
+  animation: marquee2 12s linear infinite;
+  will-change: transform;
+}
+
+@keyframes marquee2 {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
 
 .bottomnav {
   position: relative;
